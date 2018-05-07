@@ -1,0 +1,4 @@
+FROM openjdk:8 
+EXPOSE 7066 
+ADD target/configserverapi.jar configserverapi.jar
+ENTRYPOINT ["java","-jar","configserverapi.jar"]
